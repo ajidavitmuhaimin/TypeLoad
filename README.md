@@ -18,9 +18,18 @@ TypeLoad v.(version number)
 ## Let's Code 
 #### Example 
 ```
+//create variable
 const tl=TypeLoad.Get("Teko",600);
+//load font
 TypeLoad.Load(tl);
+//add font to element with CSS
+<style>
+h1{
+ font-family: "Teko",sans-serif;
+}
+</style>
 ```
+
 #### Description 
 ```
 TypeLoad.Get(fontname,weight):string
@@ -38,4 +47,5 @@ TypeLoad.Load(string):boolean
 
 `string` is the return data of TypeLoad.Get() 
 
-`TypeLoad.Load()` return `true` if the loading process is successful
+`TypeLoad.Load()` return `true` if the loading process is successful 
+
